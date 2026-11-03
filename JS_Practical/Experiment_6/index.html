@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 6 - Array Create, Add, Remove, Search and Empty (Manual Loops)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experiment 6: Array Operations</h1>
+    <input type="number" id="size" placeholder="Array size">
+    <button onclick="createArray()">Create Array</button>
+    <br>
+    <input type="text" id="addInput" placeholder="Enter item to add">
+    <button onclick="addItem()">Add</button>
+    <br>
+    <input type="text" id="removeInput" placeholder="Item to remove">
+    <button onclick="removeItem()">Remove</button>
+    <br>
+    <input type="text" id="searchInput" placeholder="Item to search">
+    <button onclick="searchItem()">Search</button>
+    <br>
+    <button onclick="showArray()">Show Array</button>
+    <button onclick="emptyArray()">Empty Array</button>
+    <button onclick="resetPage()">Reset</button>
+    <pre id="result"></pre>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

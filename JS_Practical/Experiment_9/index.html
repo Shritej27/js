@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 9 - Student Form Validation and Welcome Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experiment 9: Student Information Form</h1>
+    <form onsubmit="return validateForm()">
+      <label>Name</label><br>
+      <input type="text" id="name" placeholder="Full name"><br>
+      <label>Address</label><br>
+      <input type="text" id="address" placeholder="Address"><br>
+      <label>City</label><br>
+      <input type="text" id="city" placeholder="City"><br>
+      <label>State</label><br>
+      <input type="text" id="state" placeholder="State"><br>
+      <label>Gender</label><br>
+      <select id="gender">
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select><br>
+      <label>Mobile Number</label><br>
+      <input type="text" id="mobile" placeholder="10-digit mobile"><br>
+      <label>Email</label><br>
+      <input type="text" id="email" placeholder="name@example.com"><br>
+      <label>Pincode</label><br>
+      <input type="text" id="pincode" placeholder="6-digit pincode"><br><br>
+      <button type="submit">Submit</button>
+      <button type="button" onclick="resetPage()">Reset</button>
+    </form>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

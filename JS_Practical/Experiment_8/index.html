@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 8 - Homepage Mouseover and Focus Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experiment 8: My College Homepage</h1>
+    <p>Welcome to our college website!</p>
+    <div class="hover-box" onmouseover="hoverColor()" onmouseout="normalColor()">
+      Move mouse here to change background.
+    </div>
+    <p>Click inside the text box to see the focus event:</p>
+    <input type="text" id="focusInput" placeholder="Click here" onfocus="focusColor()" onblur="normalColor()">
+    <br>
+    <button onclick="resetPage()">Reset</button>
+    <p id="result">Try mouseover and focus events.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

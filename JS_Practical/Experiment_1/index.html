@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 1 - Area of Triangle, Rectangle and Circle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experiment 1: Area Calculator</h1>
+    <h3>Triangle</h3>
+    <input type="number" id="sideA" placeholder="Side A">
+    <input type="number" id="sideB" placeholder="Side B">
+    <input type="number" id="sideC" placeholder="Side C">
+    <button onclick="triangle()">Triangle Area</button>
+    <p id="triangleResult"></p>
+    <hr>
+    <h3>Rectangle</h3>
+    <input type="number" id="length" placeholder="Length">
+    <input type="number" id="breadth" placeholder="Breadth">
+    <button onclick="rectangle()">Rectangle Area</button>
+    <p id="rectangleResult"></p>
+    <hr>
+    <h3>Circle</h3>
+    <input type="number" id="radius" placeholder="Radius">
+    <button onclick="circle()">Circle Area</button>
+    <p id="circleResult"></p>
+    <button onclick="resetPage()">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
